@@ -1,0 +1,1 @@
+for (int i = front+1; i <= back; i++)
