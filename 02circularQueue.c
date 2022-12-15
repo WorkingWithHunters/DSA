@@ -7,18 +7,21 @@ int queue[MAX];
 
 int isQueueFull()
 {
-    if(((back+1)%MAX)+1==front)
+    if((back+2)%MAX==front)
         {
             printf("True\n");
             return 1;
         }
     else
+    {
+        printf("False\n");
         return 0;   
+    }
 }
 
 int isQueueEmpty()
 {
-    if(front==back+1)
+    if(front==(back+1)%MAX)
     {
         printf("True\n");
         return 1;
